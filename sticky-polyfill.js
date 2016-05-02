@@ -24,7 +24,7 @@
 		}
 	}
 
-	if (featureTest("position", "sticky")) {
+	if (!featureTest("position", "sticky")) {
 		var stickies = document.querySelectorAll(".sticky");
 		var scrollPos = document.body.parentNode.getBoundingClientRect().top;
 		for (var i = 0; i < stickies.length; i++) {
